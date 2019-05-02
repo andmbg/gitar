@@ -17,3 +17,13 @@ library(tidyverse)
 d <- read.csv("../data/gitar_data.csv")
 ```
 
+Plot:
+
+```{r}
+ggplot(d,
+       aes(x = age,
+           y = score)) +
+  geom_point() +
+  facet_grid(. ~ group)
+```
+

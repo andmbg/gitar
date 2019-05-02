@@ -1,17 +1,11 @@
----
-title: "myAnalysis"
-author: "Andreas"
-date: "May 2, 2019"
-output: github_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+myAnalysis
+================
+Andreas
+May 2, 2019
 
 Load data:
 
-```{r message=FALSE, warning=FALSE}
+``` r
 library(tidyverse)
 
 theme_set(theme_classic() +
@@ -26,7 +20,7 @@ d <- read.csv("../data/gitar_data.csv")
 
 Plot:
 
-```{r fig.width=8, fig.height=3}
+``` r
 ggplot(d,
        aes(x = age,
            y = score,
@@ -38,3 +32,4 @@ ggplot(d,
   scale_color_discrete(guide = F)
 ```
 
+![](gitar_analysis_files/figure-markdown_github/unnamed-chunk-2-1.png)

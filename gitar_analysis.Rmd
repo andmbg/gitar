@@ -1,0 +1,11 @@
+---
+title: "myAnalysis"
+author: "Andreas"
+date: "May 2, 2019"
+output: github_doc
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+

@@ -9,3 +9,11 @@ output: github_doc
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Load data:
+
+```{r}
+library(tidyverse)
+
+d <- read.csv("../data/gitar_data.csv")
+```
+
